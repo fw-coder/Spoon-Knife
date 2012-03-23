@@ -41,6 +41,8 @@
 		keyCodes.push(e.keyCode);
 		if(keyCodes.every(function(element, index, array){return element===pattern[index];})){
 			document.getElementById("rainbow-message").style.display="";
+		} else {
+			document.getElementById("rainbow-message").style.display="";
 		}
 	}
 	window.onkeydown=keydownHandler;
